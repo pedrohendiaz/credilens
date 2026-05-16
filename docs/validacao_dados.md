@@ -23,16 +23,11 @@ Para cada KPI principal, refiz o cálculo manualmente em um script independente 
 | Score médio (ponderado por boleto) | 527,41 | 527,41 | OK |
 | Cobertura boletos × auxiliar | 100% | 100% | OK |
 
-Todos os números bateram.
+Todos os números bateram com a fonte original.
 
-## Confronto com dashboard do grupo na Sprint 3
+## Observação sobre nomenclatura
 
-O dashboard do grupo (`DataViz_Nuclea` no Looker Studio) também usou as mesmas bases. Os números que coincidem nos dois dashboards:
-
-- Beneficiários únicos: **1.189** (deles) vs **1.189 cedentes** (CrediLens)
-- Pagadores únicos: **3.525** (deles) vs **3.525 sacados** (CrediLens)
-
-A nomenclatura é diferente (`beneficiario` no deles vs `cedente` no CrediLens) porque o "beneficiário" do boleto original passa a ser tratado como "cedente" no contexto do FIDC após a cessão do crédito.
+Em alguns pontos do dashboard, o termo "cedente" aparece no lugar de "beneficiário" (que é o nome da coluna na base original). Essa troca é proposital: no contexto de um FIDC, o "beneficiário" do boleto original passa a ser tratado como "cedente" após a cessão do crédito ao fundo. Mantive a terminologia do mercado de FIDC pra ficar coerente com a proposta do projeto.
 
 ## Observação sobre o score médio
 
